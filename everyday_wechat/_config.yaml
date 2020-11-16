@@ -120,7 +120,7 @@ group_helper_conf:
   is_open: True # 开启群助手
   is_all: False # 是否对所有群开启。当开启时，只有黑名单的名单才不受影响（慎重开启！）
 
-  # 白名单用户。当 is_all：Fase。只处理这个群里的消息
+  # 白名单用户。当 is_all：False。只处理这个群里的消息
   group_name_white_list:
     - '蕉群'
     - '群机器人测试群'
