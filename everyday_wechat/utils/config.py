@@ -26,7 +26,7 @@ def get_yaml():
     解析 yaml
     :return: s  字典
     """
-    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '_config.yaml')
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), os.environ.get('CONFIG_FILE', '_config.yaml'))
     try:
 
         with open(path, 'r', encoding='utf-8') as file:
